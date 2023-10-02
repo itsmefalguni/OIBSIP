@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex&family=Montserrat:wght@200&family=Poppins:wght@400;700&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(2, 2, 21);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(9, 9, 51);
+            position: sticky;
+            z-index: 1;
+            width: 100%;
+            top: 0px;
+            opacity: 0.89;
+
+
+        }
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(157, 157, 206);
+            font-size: 1.31rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(146, 146, 226);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .lefts {
+            font-size: 1.89rem;
+
+        }
+
+        .rights {
+            font-size: 1.3rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 140px 0px;
+            align-items: center;
+
+        }
+
+        .first>div {
+            width: 30%;
+
+
+
+        }
+
+        .left-section {
+            font-size: 2.5rem;
+            /* margin: 63px 0px; */
+        }
+
+        .left-section .btn {
+            padding: 12px;
+            background-color: #a739db;
+            color: lavender;
+            border-radius: 26px;
+            font-size: 16px;
+            margin-top: 44px;
+            cursor: pointer;
+            border: 2px solid #b47dde;
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        .right-section img {
+            width: 98%;
+
+
+        }
+
+        #element {
+            color: rgb(146, 60, 227);
+        }
+
+        .purple {
+            color: rgb(146, 60, 227);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .second {
+            max-width: 80vw;
+            margin: auto;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        .second h1 {
+
+            margin: 9px 550px;
+        }
+
+        .second .img img {
+            height: 410px;
+            width: 770px;
+            margin: 19px 214px;
+            transition: all 0.3s ease-in;
+        }
+
+        .second .img img:hover {
+            transform: scale(1.08);
+        }
+
+        .second a {
+            text-decoration: none;
+            font-size: 1.9rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .third {
+            display: flex;
+            justify-content: space-around;
+            margin: 16px 13px;
+            align-items: center;
+            padding: 5px 40px;
+
+        }
+
+        .left img {
+            width: 140%;
+            padding: 23px;
+            margin: 0px 43px;
+            transition: all 0.3s ease-in;
+
+        }
+
+        .left img:hover {
+            transform: scale(1.05);
+
+        }
+
+        .right {
+            font-size: 1.5rem;
+        }
+
+        .left-content {
+            padding-left: 352px;
+            padding-right: 31px;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 2.1;
+        }
+
+        footer {
+            background-color: rgb(14, 14, 29);
+            height: 400px;
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer ul li {
+            padding: 23px;
+
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: lavenderblush;
+            font-size: 1.3rem;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .h-primary {
+            font-size: 2.3rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .footer-third img {
+            width: 7%;
+
+        }
+
+        .footer-first {
+            padding: 23px 200px;
+        }
+
+        .footer-second {
+            padding: 23px;
+        }
+
+        .footer-third {
+            padding: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="lefts">Falguni's portfolio</div>
+        <div class="rights">
+            <ul>
+                <li> <a href="#sec1">Home</li></a>
+                <li> <a href="#sec2">Work</li></a>
+                <li> <a href="#sec3">About</li></a>
+                <li> <a href="#foot">Contact me</li></a>
+
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="first" id="sec1">
+            <div class="left-section">
+                Hi, My Name is <span class="purple">Falguni</span>
+                <div>and I Am a Passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Profile.pdf" target="_blank"><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/itsmefalguni" target="_blank"><button class="btn">Visit GitHub</button></a>
+
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="images/png1.webp" alt="">
+
+            </div>
+        </section>
+        <hr>
+        <section class="second" id="sec2">
+            <span class="text-gray">What I have done so far</span>
+            <h1 class="h-primary">WORK</h1>
+            <div class="img">
+                <img src="images/lp.png" alt="">
+            </div>
+            <a href="file:///C:/webD%20course/project1/index.html">LANDING PAGE</a>
+
+        </section>
+        <hr>
+        <section class="third-section" id="sec3">
+            <h1 class="center h-primary">ABOUT</h1>
+            <div class="third">
+                <div class="left">
+                    <img src="images/dp.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="left-content">My name is Falguni Kamewal and I am a computer Science Undergrad pursuing
+                        my btech from jecrc University.
+                        I have learned c++, java, DSA so far and now learning Web development and designing.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer" id="foot">
+            <div class="footer-first h-primary">
+                <h3>Contact Me</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/falguni-kamewal-8873a7244/"
+                            target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100076507245646" target="_blank">Facebook</a>
+                    </li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRmTgSQZrjQdvtGJMKtlllsbJzmPvVFJplBpbNswjVPvKpcKMRvdrxpGmDxtjmFhCZJztBB"
+                            target="_blank">Gmail</a></li>
+                    <li><a href="https://www.instagram.com/itsmefalguni/" target="_blank">Instagram</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-third">
+                <ul>
+                    <li><img src="images/logo1.png" alt=""></li>
+                    <li><img src="images/logo2.png" alt=""></li>
+                    <li><img src="images/logo3.webp" alt=""></li>
+                    <li><img src="images/logo4.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Content Creator', 'Social Media Handler', 'Video Editor', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
